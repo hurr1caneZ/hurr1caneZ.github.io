@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="shortcut icon" href="img/favicon.jpg">
+    <title>eM</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="content">
+    <div class="fuzz"></div>
+    <div class="logo-area">
+            <pre class="logo">
+                ___        ___
+               |   \      /   |
+               | |\ \    / /| | ___
+               | | \ \__/ / | |/ _ \
+               | |  \_ __/  | |  __/
+               |_|          |_|\___|  (_)
+
+            </pre>
+        <blockquote class="logo-area-quote white"> <span id="spin"></span> home page</blockquote>
+    </div>
+
+    <div class="info-wrapper">
+        <div class="info">
+            <span class="yellow">## Who am i</span><br>
+            <p class="green">
+                C# dev from ITMO.
+            </p>
+
+            <p class="white"">=======================</p>
+
+            <span class="yellow">## Hard-Skills</span><br>
+            <p class="green">
+                > C#, ASP.NET.CORE, Swagger, Entity Framework. <br>
+                > C++, Java, JavaScript, HTML/CSS. <br>
+                > MSSQL, Docker, GitExtensions, Linux CentOS, Algorithms and Data Structures. <br>
+
+            </p>
+
+            <p class="white"">=======================</p>
+
+            <span class="yellow">## Useful Info</span>
+            <br><br>
+
+            <span class="yellow h3">### contacts and social media</span><br>
+            <p>
+                github:&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <a href="https://github.com/hurr1caneZ?" class="magenta">github.com/Zhurr1caneZ</a><br>
+                email:&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;<a href="mailto:sdc_ac@mail.ru" class="magenta">sdc_ac@mail.ru</a><br>
+                telegram:&nbsp;&nbsp; &nbsp; &nbsp; <a href="https://t.me/dnx1kv" class="magenta">@dnx1kv</a><br>
+                instagram:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://instagram.com/dnx1kv" class="magenta">@dnx1kv</a><br>
+            </p>
+
+        </div>
+    </div>
+
+</div>
+<script>
+    const copy_colors = [
+        '#00DF00',
+        '#fff',
+        '#00E3E3',
+        '#E7E700',
+        '#E100E1',
+        'indigo',
+        'violet',
+        '#F0488C',
+    ];
+    let colorIndex = 0;
+
+    document.addEventListener('selectstart', () => {
+        colorIndex = colorIndex + 1;
+        if(colorIndex >= copy_colors.length) colorIndex = 0;
+
+        document.querySelector('body').style.setProperty('--select-bg',`${copy_colors[colorIndex]}`);
+    });
+</script>
+</body>
+</html>
